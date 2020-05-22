@@ -9,6 +9,7 @@ import { MetaSplitterBuilding } from "./buildings/splitter";
 import { MetaStackerBuilding } from "./buildings/stacker";
 import { MetaTrashBuilding } from "./buildings/trash";
 import { MetaUndergroundBeltBuilding } from "./buildings/underground_belt";
+import { MetaFurnaceBuilding } from "./buildings/furnace";
 import { MetaHubBuilding } from "./buildings/hub";
 
 export function initMetaBuildingRegistry() {
@@ -22,5 +23,6 @@ export function initMetaBuildingRegistry() {
     gMetaBuildingRegistry.register(MetaTrashBuilding);
     gMetaBuildingRegistry.register(MetaBeltBaseBuilding);
     gMetaBuildingRegistry.register(MetaUndergroundBeltBuilding);
+    gMetaBuildingRegistry.register(MetaFurnaceBuilding);
     gMetaBuildingRegistry.register(MetaHubBuilding);
 }
