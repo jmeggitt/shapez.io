@@ -327,6 +327,7 @@
             <key type="filename">sprites/blueprints/painter.png</key>
             <key type="filename">sprites/blueprints/splitter.png</key>
             <key type="filename">sprites/blueprints/stacker.png</key>
+            <key type="filename">sprites/buildings/furnace.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>

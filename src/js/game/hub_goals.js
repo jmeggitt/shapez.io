@@ -391,6 +391,7 @@ export class HubGoals extends BasicSerializableObject {
             case enumItemProcessorTypes.painter:
             case enumItemProcessorTypes.painterDouble:
             case enumItemProcessorTypes.painterQuad:
+            case enumItemProcessorTypes.furnace:
                 assert(
                     globalConfig.buildingSpeeds[processorType],
                     "Processor type has no speed set in globalConfig.buildingSpeeds: " + processorType

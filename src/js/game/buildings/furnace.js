@@ -27,7 +27,8 @@ export class MetaFurnaceBuilding extends MetaBuilding {
      * @param {GameRoot} root
      */
     getIsUnlocked(root) {
-        return root.hubGoals.isRewardUnlocked(enumHubGoalRewards.reward_furnace);
+        return true;
+        // return root.hubGoals.isRewardUnlocked(enumHubGoalRewards.reward_furnace);
     }
 
     /**

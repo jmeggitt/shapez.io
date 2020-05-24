@@ -10,15 +10,23 @@ export class ShapeItem extends BaseItem {
     }
 
     static getSchema() {
-        return types.string;
+        return types.structured({
+            definition: types.knownType(ShapeDefinition),
+            melted: types.bool,
+        });
     }
 
-    serialize() {
-        return this.definition.getHash();
-    }
+    // serialize() {
+    //     return this.definition.getHash();
+    // }
 
     deserialize(data) {
-        this.definition = ShapeDefinition.fromShortKey(data);
+        try {
+            super.deserialize(data);
+        } catch (e) {
+            // Old serialization method was used for this save
+            this.definition = ShapeDefinition.fromShortKey(data);
+        }
     }
 
     /**

@@ -61,6 +61,7 @@ export const globalConfig = {
         painterQuad: 1 / 8,
         mixer: 1 / 5,
         stacker: 1 / 6,
+        furnace: 1 / 8,
     },
 
     // Zooming
@@ -85,7 +86,7 @@ export const globalConfig = {
         /* dev:start */
         // fastGameEnter: true,
         // noArtificialDelays: true,
-        // disableSavegameWrite: true,
+        disableSavegameWrite: true,
         // showEntityBounds: true,
         // showAcceptorEjectors: true,
         // disableMusic: true,
@@ -93,8 +94,8 @@ export const globalConfig = {
         // disableZoomLimits: true,
         // showChunkBorders: true,
         // rewardsInstant: true,
-        // allBuildingsUnlocked: true,
-        // upgradesNoCost: true,
+        allBuildingsUnlocked: true,
+        upgradesNoCost: true,
         // disableUnlockDialog: true,
         // disableLogicTicks: true,
         // testClipping: true,

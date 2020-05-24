@@ -328,6 +328,17 @@ export class ItemProcessorSystem extends GameSystemWithFilter {
                 break;
             }
 
+            case enumItemProcessorTypes.furnace: {
+                const inputItem = /** @type {ShapeItem} */ (items[0].item);
+                assert(inputItem instanceof ShapeItem, "Input for melting is not a shape");
+
+                inputItem.melted = true;
+                outItems.push({
+                    item: inputItem,
+                });
+                break;
+            }
+
             default:
                 assertAlways(false, "Unkown item processor type: " + processorComp.type);
         }

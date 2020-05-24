@@ -15,6 +15,7 @@ import { MetaUndergroundBeltBuilding } from "../../buildings/underground_belt";
 import { MetaBuilding } from "../../meta_building";
 import { BaseHUDPart } from "../base_hud_part";
 import { KEYMAPPINGS } from "../../key_action_mapper";
+import { MetaFurnaceBuilding } from "../../buildings/furnace";
 
 const toolbarBuildings = [
     MetaBeltBaseBuilding,
@@ -27,6 +28,7 @@ const toolbarBuildings = [
     MetaMixerBuilding,
     MetaPainterBuilding,
     MetaTrashBuilding,
+    MetaFurnaceBuilding,
 ];
 
 export class HUDBuildingsToolbar extends BaseHUDPart {

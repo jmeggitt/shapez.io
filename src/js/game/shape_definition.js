@@ -80,12 +80,9 @@ export class ShapeDefinition extends BasicSerializableObject {
     }
 
     deserialize(data) {
-        const errorCode = super.deserialize(data);
-        if (errorCode) {
-            return errorCode;
-        }
         const definition = ShapeDefinition.fromShortKey(data);
         this.layers = definition.layers;
+        this.cachedHash = definition.cachedHash;
     }
 
     serialize() {
