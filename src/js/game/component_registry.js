@@ -10,6 +10,8 @@ import { UndergroundBeltComponent } from "./components/underground_belt";
 import { UnremovableComponent } from "./components/unremovable";
 import { HubComponent } from "./components/hub";
 import { StorageComponent } from "./components/storage";
+import { EnemyComponent } from "./components/enemy";
+import { HealthComponent } from "./components/health";
 
 export function initComponentRegistry() {
     gComponentRegistry.register(StaticMapEntityComponent);
@@ -23,6 +25,8 @@ export function initComponentRegistry() {
     gComponentRegistry.register(UnremovableComponent);
     gComponentRegistry.register(HubComponent);
     gComponentRegistry.register(StorageComponent);
+    gComponentRegistry.register(HealthComponent);
+    gComponentRegistry.register(EnemyComponent);
 
     // IMPORTANT ^^^^^ UPDATE ENTITY COMPONENT STORAGE AFTERWARDS
 

@@ -10,6 +10,9 @@ import { UndergroundBeltComponent } from "./components/underground_belt";
 import { UnremovableComponent } from "./components/unremovable";
 import { HubComponent } from "./components/hub";
 import { StorageComponent } from "./components/storage";
+import { EnemyComponent } from "./components/enemy";
+import { HealthComponent } from "./components/health";
+
 /* typehints:end */
 
 /**
@@ -55,6 +58,12 @@ export class EntityComponentStorage {
 
         /** @type {StorageComponent} */
         this.Storage;
+
+        /** @type {EnemyComponent} */
+        this.Enemy;
+
+        /** @type {HealthComponent} */
+        this.Health;
 
         /* typehints:end */
     }
